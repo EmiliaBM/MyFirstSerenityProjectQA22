@@ -14,12 +14,30 @@ public class HomePage extends PageObject {
     @FindBy(css = "[title='Log In']")
     private WebElementFacade logInLink;
 
+    @FindBy (css = "a[title='Register']")
+    private WebElementFacade registerLink;
+
+    @FindBy (css = ".level0.nav-5.parent > .has-children.level0")
+    private WebElementFacade saleCategory;
+
+    @FindBy (css = ".level0.nav-5.parent > .level0 > .level1.view-all > .level1")
+    private WebElementFacade viewAllSales;
+
     public void clickAccountLink(){
         clickOn(accountLink);
     }
-
     public void clickLogInLink(){
         clickOn(logInLink);
+    }
+    public void clickRegisterLink(){
+        clickOn(registerLink);
+    }
+
+    public void clickSaleCategory(){
+        clickOn(saleCategory);
+    }
+    public void clickOnViewAllSales(){
+        clickOn(viewAllSales);
     }
 
 
