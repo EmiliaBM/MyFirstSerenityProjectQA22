@@ -12,7 +12,6 @@ import org.openqa.selenium.WebDriver;
 
 public class ProductOneTest {
     @Managed (uniqueSession = true)
-
     private WebDriver driver;
 
     @Steps
