@@ -6,6 +6,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("http://testfasttrackit.info/selenium-test/")
+
 public class HomePage extends PageObject {
 
     @FindBy(css = ".skip-account .label")
